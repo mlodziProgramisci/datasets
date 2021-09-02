@@ -63,6 +63,10 @@ addKind('Husky Syberyjski'    , 'Szpice i psy w typie pierwotnym', ["szary","wil
 `Współcześnie husky syberyjski jest wykorzystywany, tak jak i dawniej, jako pies zaprzęgowy, także jako pies rodzinny.`,
 "average","safe for adults","big",16,27,12,14)
 
+kinds.forEach(kind => kind.description = kind.description
+  .replace('.', '. ')
+  .replace('\n', ' \n '))
+
 interface Dog{
   nickname: string,
   kindName: string,
@@ -95,6 +99,11 @@ function randomSFloatInRange(a, b){
   const to = Math.max(a,b)
   return Math.round( 10 * (from + Math.random() * (to - from)) ) / 10;
 }
+function randomIntInRange(a, b){
+  const from = Math.min(a,b)
+  const to = Math.max(a,b)
+  return Math.floor((from + Math.random() * (to - from) + 1) );
+}
 
 function randomDog():Dog {
   const kind = randomElement(kinds);
@@ -115,5 +124,5 @@ for (let i = 0; i < 1000; i++) {
 
 const result =  JSON.stringify({kinds, dogs})
 
-fs.writeFileSync('dogs.json', result)
-fs.writeFileSync('dogs.js', "var dogs = JSON.parse('"+result+"');")
+fs.writeFileSync('./build/dogs.json', result)
+fs.writeFileSync('./build/dogs.js', "var dogs = JSON.parse('"+result+"');")

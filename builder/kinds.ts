@@ -52,7 +52,7 @@ export function getKinds(): Kind[] {
 
   const uk = uniqueArray(kindFilesData, kind => kind.name)
   
-  uk.forEach( kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ','-') )
+  uk.forEach( kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ','-') ) + '.svg'
 
   return uk;
 }

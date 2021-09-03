@@ -1,0 +1,21 @@
+name: Rottweiler
+image: "./assets/pieski/rottweiler.svg"
+group: Pinczery i sznaucery, molosy, szwajcarskie psy górskie i do bydła, pozostałe
+  rasy
+colors:
+- czarny
+- brązowy
+description: 'Rottweiler z natury jest psem obronnym i agresywnym wobec intruzów.
+  Według wzorca jest to pies o zrównoważonej psychice, wymagający odpowiedniego i
+  konsekwentnego podejścia. Pewność siebie jest główną cechą charakteru tej rasy,
+  podobnie jak upór, samodzielność czy skłonność do dominacji (ujawnia się to szczególnie
+  u samców). W rękach osoby brutalnej i niezrównoważonej rottweiler staje się nieprzewidywalny
+  i może stanowić zagrożenie dla otoczenia, z właścicielem włącznie. Pies ten potrzebuje
+  sporej dawki codziennego ruchu: regularnych treningów i szkoleń oraz aktywnych spacerów.'
+typicalActivityLevel: hyperactive
+typicalAggressiveness: dangerous
+size: big
+minHealthyMass: 43
+maxHealthyMass: 63
+minTypicalLifespan: 11
+maxTypicalLifespan: 13

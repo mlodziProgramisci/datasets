@@ -1,0 +1,21 @@
+name: Golden Retriver
+image: "./assets/pieski/golden-retriver.svg"
+group: Aportery, płochacze i psy dowodne
+colors:
+- ciemno-złoty
+- jasno-złoty
+description: 'Psy tej rasy charakteryzują się inteligencją, posłuszeństwem oraz łagodnym
+  charakterem. Golden retrievery są energiczne, wytrzymałe i aktywne. Szybko przywiązują
+  się do właściciela. Przyjacielskie i towarzyskie, potrzebują bliskiego kontaktu
+  z członkami rodziny, dobrze tolerują inne zwierzęta w domostwie. Ze względu na swój
+  karny i łagodny charakter, sprawdzają się jako towarzysze osób starszych i dzieci,
+  wyklucza to jednak ich zastosowanie jako psów stróżujących i obronnych. Nazwa psa
+  nawiązuje do doskonałych umiejętności aportowania: golden retriever w wolnym tłumaczeniu
+  oznacza „złoty aporter”. Są też przyjazne wobec dzieci.'
+typicalActivityLevel: hyperactive
+typicalAggressiveness: safe for kids
+size: big
+minHealthyMass: 24
+maxHealthyMass: 34
+minTypicalLifespan: 10
+maxTypicalLifespan: 12

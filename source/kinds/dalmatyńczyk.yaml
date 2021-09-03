@@ -1,0 +1,19 @@
+name: Dalmatyńczyk
+image: "./assets/pieski/dalmatyńczyk.svg"
+group: Psy gończe i rasy pokrewne
+colors:
+- biało-czarne
+- biało-brązowe
+description: Jest to pies odważny, czujny i zrównoważony. Wykazuje wysoki stopień
+  przywiązania do członków rodziny, dobrze czuje się w towarzystwie dzieci. Aktywny
+  i towarzyski, sprawdza się jako pies rodzinny, jeśli jest odpowiednio prowadzony.
+  Na ogół przyjaźnie nastawiony do innych zwierząt. Dalmatyńczyk nie jest psem odpowiednim
+  dla mało ruchliwych osób. Podatny na szkolenie, chętny do nauki, którą z uwagi na
+  niezależność charakteru tej rasy należy zaczynać jak najwcześniej.
+typicalActivityLevel: average
+typicalAggressiveness: safe for adults
+size: big
+minHealthyMass: 55.9
+maxHealthyMass: 61
+minTypicalLifespan: 14
+maxTypicalLifespan: 17

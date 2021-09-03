@@ -1,0 +1,16 @@
+name: Husky Syberyjski
+image: "./assets/pieski/husky-syberyjski.svg"
+group: Szpice i psy w typie pierwotnym
+colors:
+- szary
+- wilczasty
+- sobolowy
+description: Współcześnie husky syberyjski jest wykorzystywany, tak jak i dawniej,
+  jako pies zaprzęgowy, także jako pies rodzinny.
+typicalActivityLevel: average
+typicalAggressiveness: safe for adults
+size: big
+minHealthyMass: 16
+maxHealthyMass: 27
+minTypicalLifespan: 12
+maxTypicalLifespan: 14

@@ -1,0 +1,18 @@
+name: Jamnik
+image: "./assets/pieski/jamnik.svg"
+group: Jamniki
+colors:
+- czarny
+- brunatny
+description: |-
+  Jamniki to bardzo radosne, ruchliwe psy znane ze skłonności do ścigania małych zwierząt i ptaków. Cechuje je upór i nieustępliwość, co utrudnia ich tresurę. Szczekają wyjątkowo głośno, dlatego mają predyspozycję do bycia dobrym psem stróżującym. Znane są ze swojego przywiązania i lojalności w stosunku do właściciela. Są towarzyskie, jednak obcych traktują z rezerwą i nieufnością.
+  Charakter jamnika może różnić się w zależności od jego odmiany. Długowłose psy są spokojniejsze. Mają wrodzoną inteligencję odziedziczoną po spanielach. Szorstkowłose natomiast charakteryzuje odwaga terrierów.
+  Duża część jamników nie lubi nieznajomych ludzi i reaguje na nich szczekaniem i warczeniem. Chociaż najczęściej jamniki są bardzo energicznymi zwierzętami, zdarzają się też psy bardzo spokojne.
+  Jamnik wymaga szczególnej troski i zainteresowania właściciela. Psy te mają szczególne wymagania jeśli chodzi o tresurę i rozrywkę. Wymagają dużo uwagi, w przeciwnym razie mogą stać się agresywne i groźne. Niektóre nie tolerują dzieci. Przy odpowiednim ułożeniu jamnik może bardzo zaprzyjaźnić się z dzieckiem.
+typicalActivityLevel: average
+typicalAggressiveness: safe for adults
+size: small
+minHealthyMass: 3.5
+maxHealthyMass: 14.5
+minTypicalLifespan: 12
+maxTypicalLifespan: 16

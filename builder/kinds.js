@@ -7,6 +7,7 @@ exports.getKinds = void 0;
 const fs_extra_1 = __importDefault(require("fs-extra"));
 const path_1 = require("path");
 const js_yaml_1 = require("js-yaml");
+const tools_1 = require("./tools");
 function log(str) {
     str.split("\n").forEach(line => console.log(line));
 }
@@ -35,7 +36,8 @@ function getKinds() {
     const kindFilesPaths = listDir((0, path_1.join)(__dirname, '../source/kinds'), "files", true);
     const kindFilesContents = kindFilesPaths.map(p => fs_extra_1.default.readFileSync(p, "utf-8"));
     const kindFilesData = kindFilesContents.map(str => (0, js_yaml_1.load)(str));
-    kindFilesData.forEach(kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ', '-'));
-    return kindFilesData;
+    const uk = (0, tools_1.uniqueArray)(kindFilesData, kind => kind.name);
+    uk.forEach(kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ', '-'));
+    return uk;
 }
 exports.getKinds = getKinds;

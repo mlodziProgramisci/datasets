@@ -1,6 +1,7 @@
 import fs from "fs-extra";
 import {join} from "path";
 import {load as yaml} from 'js-yaml';
+import { uniqueArray } from "./tools";
 
 function log(str:string) {
   str.split("\n").forEach(line => console.log(line));
@@ -48,8 +49,10 @@ export function getKinds(): Kind[] {
   const kindFilesPaths = listDir(join(__dirname, '../source/kinds'),"files",true);
   const kindFilesContents = kindFilesPaths.map( p => fs.readFileSync(p, "utf-8") );
   const kindFilesData = kindFilesContents.map( str => yaml(str) ) as Kind[];
-  
-  kindFilesData.forEach( kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ','-') )
 
-  return kindFilesData;
+  const uk = uniqueArray(kindFilesData, kind => kind.name)
+  
+  uk.forEach( kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ','-') )
+
+  return uk;
 }

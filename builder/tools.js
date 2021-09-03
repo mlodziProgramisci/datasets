@@ -19,7 +19,7 @@ function randomFloatInRange(a, b, precision) {
     const to = Math.max(a, b);
     if (typeof precision === "undefined")
         return from + Math.random() * (to - from);
-    return Math.round((10 ^ precision) * randomFloatInRange(a, b)) / (10 ^ precision);
+    return Math.round(Math.pow(10, precision) * randomFloatInRange(a, b)) / Math.pow(10, precision);
 }
 exports.randomFloatInRange = randomFloatInRange;
 function randomIntInRange(a, b) {

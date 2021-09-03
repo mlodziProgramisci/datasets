@@ -1,4 +1,4 @@
-## 
+[API website](https://mlodziprogramisci.github.io/dogs/)
 
 #### Dog kind entry
 ```TS

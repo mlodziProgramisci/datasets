@@ -37,7 +37,7 @@ function getKinds() {
     const kindFilesContents = kindFilesPaths.map(p => fs_extra_1.default.readFileSync(p, "utf-8"));
     const kindFilesData = kindFilesContents.map(str => (0, js_yaml_1.load)(str));
     const uk = (0, tools_1.uniqueArray)(kindFilesData, kind => kind.name);
-    uk.forEach(kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ', '-')) + '.svg';
+    uk.forEach(kind => kind.image = "https://mlodziprogramisci.github.io/dogs/assets/pieski/" + kind.name.toLowerCase().replace(' ', '-') + '.svg');
     return uk;
 }
 exports.getKinds = getKinds;

@@ -10,11 +10,12 @@ interface Dog{
   mass:number,
   age:number,
 
-  // help oppurtunities
+  // flag addHelpOpportunities
   needsBathIn?: number,
   needsHealthCheckupIn?: number,
   lastWalk?: number,
 
+  // flag addAccomodationNeeds
   needsCostantCheckups?: boolean,
   needsSpecialFood?: boolean,
   needsPeaceAndQuiet?: boolean,
@@ -22,6 +23,7 @@ interface Dog{
   needsSolitaryRoom?: boolean,
   needsBiggerKennel?: boolean,
 
+  // flag addBehaviour
   tolerateOtherDogs?: boolean,
   tolerateCats?: boolean,
   tolerateChildren?:boolean,
